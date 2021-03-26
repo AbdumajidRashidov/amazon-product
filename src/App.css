@@ -1,0 +1,77 @@
+.productPreview{
+  width: 50%;
+  position: relative;
+}
+.mainContainer{
+  width: 100%;
+  display: flex;
+}
+.productData{
+  max-width: 40%;
+  margin:20px 50px 0 0;
+
+}
+.featueItem{
+  background-color: gainsboro;
+  padding: 12px 24px;
+  margin-right: 10px;
+  outline: none;
+  border-color: aliceblue;
+  border-radius: 7px;
+ cursor: pointer;
+}
+.selectedProduct{
+  border-color: blue !important;
+}
+.selectedFeatureItem{
+  color: azure;
+  background-color: darkgrey;
+}
+.primaryButton{
+  padding: 12px 24px;
+   background-color: rgb(78, 13, 182);
+  padding: 12px 24px;
+  margin-right: 10px;
+  outline: none;
+  border-color: aliceblue;
+  border-radius: 7px;
+  margin-top: 30px;
+  color: aliceblue;
+  cursor: pointer;
+}
+.TimeSection{
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  color: white;
+  font-size: 38px;
+  font-weight: 600;
+  transform: translate(-50%,-50%);
+}
+.HeardBeatSection{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 38px;
+  font-weight: 600;
+  transform: translate(-50%,-50%);
+}
+.HeardBeatSection > p{
+  margin-top: 16px;
+}
+.HeardBeatSection > i{
+  color: red;
+  animation: beat 1s infinite;
+}
+@keyframes beat{
+  0%{
+    transform: scale(1.1,1.1);
+  }
+  50%{
+    transform: scale(1.2,1.2);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
